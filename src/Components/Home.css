@@ -69,22 +69,25 @@ body{
   margin: 0 0;
   margin-bottom: 3rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
-.query{
+
+.dropZone-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
   background: transparent;
   padding: 2rem;
-  width: 25rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
   border: 1px solid rgba(98,98,98,1);
   color: white;
 }
-
+.fui-dropzone-root{
+  min-width:35rem !important;
+}
 .query > img{
 margin-right: 2rem;
 object-fit: cover;
@@ -161,7 +164,7 @@ color: white;
 .bot{
   background: rgba(28,30,58,1);
   width: fit-content;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 
@@ -185,22 +188,28 @@ color: white;
 
 }
 .inp>input{
-  width: calc(100%-3rem);
+  width: 95rem;
   outline: none;
   padding: 1.65rem;
   color: white;
   font-size: medium;
+  cursor: cell;
   
 }
 .inp >input, .send{
   background: transparent;
   border: none;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .chatFooter>p{
   margin: 2rem 0;
-  font-size: small;
+  font-size: 1.5rem;
+  color: lightgrey;
 }
 
+.Toastify__toast-body{
+  font-size: 2rem;
+}
 
