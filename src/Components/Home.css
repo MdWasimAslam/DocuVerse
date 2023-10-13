@@ -1,43 +1,206 @@
-.container {
-    text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+body{
+  background:rgb(3,0,31);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App{
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar{
+  flex: 3;
+  border-right: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main{
+  flex:9;
+}
+
+.logo{
+  margin-right: 1rem;
+}
+
+.brand{
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.upperSide{
+  padding: 2.5rem;
+}
+
+.upperSideTop{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.addBtn{
+  height: 2rem;
+  padding-right: 1rem;
+
+}
+
+.midBtn{
+  background:#5a4bff;
+  border: none;
+  color: white;
+  padding: 2rem;
+  font-size: 1.5rem;
+  width: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+}
+
+.query{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  background: transparent;
+  padding: 2rem;
+  width: 25rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(98,98,98,1);
+  color: white;
+}
+
+.query > img{
+margin-right: 2rem;
+object-fit: cover;
+height: 1.75rem;
+}
+
+.lowerSide{
+  padding: 2.5rem;
+}
+
+.listItem{
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
+
+.listItemImg{
+margin: 1rem;
+padding-right: 1rem;
+color: white;
+}
+
+.main{
+  min-height: calc(100vh-14rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 6rem 10rem;
+
+}
+
+.chats{
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100rem;
+  height: calc(100vh-17rem);
+  max-height: 67rem;
+
+}
+/* Ensure the scroll track and thumb are visible */
+.chats::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chats::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.chats::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.chat{
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: medium;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.chatImg{
+  object-fit: cover;
+  width: 3.5rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+
+}
+.bot{
+  background: rgba(28,30,58,1);
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+
+
+.chatFooter  {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inp{
+  padding: 0.5rem;
+  background: rgba(28,30,58,1);
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 100rem;
+  justify-content: space-between;
+
+}
+.inp>input{
+  width: calc(100%-3rem);
+  outline: none;
+  padding: 1.65rem;
+  color: white;
+  font-size: medium;
   
-  h1 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+}
+.inp >input, .send{
+  background: transparent;
+  border: none;
+  margin-right: 10px;
+}
+
+.chatFooter>p{
+  margin: 2rem 0;
+  font-size: small;
+}
+
+
